@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="image.css">
+</head>
+<body>
+<h1 class="heading1">MY IMAGE GALLERY</h1>
+  <div class="gallery">
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(1)">
+      <h1 class="heading">Amazon Forest</h1>
+      <img src="amazon.jpg" alt="Image 1">
+      <p class="description">The Amazon Rainforest, also known as the "Lungs of the Earth,"
+         is the world's largest tropical rainforest, spanning over 5.5 million 
+         square kilometers across nine countries in South America. It is home to an incredible
+          diversity of wildlife, including millions of species of plants, animals, and insects,
+           many of which are found nowhere else. The Amazon plays a crucial role in regulating global
+            climate by absorbing vast amounts of carbon dioxide. However, deforestation and climate change 
+            threaten its delicate ecosystems, endangering countless species and impacting indigenous communities 
+            who depend on the forest for their livelihoods.</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(2)">
+      <h1 class="heading">Virat kohli</h1>
+      <img src="virat kohli.jpg" alt="Image 2">
+      <p class="description">Virat Kohli is an Indian cricketer and one of the greatest batsmen in the world. Born on November 5,
+         1988, in Delhi, he captained the Indian cricket team in all formats and is known for his aggressive style and consistency.
+          Kohli has numerous records, including being the fastest to 8,000, 9,000, and 10,000 runs in One Day Internationals (ODIs).
+           He has scored over 70 international centuries
+         and has played a crucial role in India's victories in various series and tournaments. His passion,
+          discipline, and fitness have made him a role model for aspiring cricketers globally.</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+      <h1 class="heading">Lionel Messi</h1>
+      <img src="messi.jpg" alt="Image 3">
+      <p class="description">Lionel Messi, born on June 24, 1987, in Rosario, Argentina, is widely regarded as one of the greatest footballers in history. Known for his extraordinary dribbling, playmaking, and goal-scoring abilities, Messi has won numerous individual awards, including seven Ballon d'Or titles. He spent the majority of his career at FC Barcelona, where he became the club's all-time top scorer and led them to multiple La Liga and UEFA Champions League titles. In 2021, Messi joined Paris Saint-Germain (PSG). Internationally, he helped Argentina win the Copa América in 2021 and the FIFA World Cup in 2022.</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(1)">
+      <h1 class="heading">Rohit Sharma</h1>
+        <img src="rohit sharma.jpg" alt="Image 4">
+        <p class="description">Rohit Sharma, born on April 30, 1987, in Nagpur, India, is one of the most prolific batsmen in international cricket. Known for his elegant stroke play and ability to score big hundreds, Rohit is the only cricketer to have scored three double centuries in One Day Internationals (ODIs). He holds the record for the highest individual score in an ODI with 264 runs. Rohit has also excelled as the captain of Mumbai Indians in the Indian Premier League (IPL), leading the team to five titles. In 2021, he became the captain of India's ODI and T20I teams.</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(2)">
+      <h1 class="heading">Cristiano Ronaldo</h1>
+        <img src="ronaldo.jpg" alt="Image 5">
+        <p class="description">Cristiano Ronaldo, born on February 5, 1985, in Madeira, Portugal, is one of the greatest footballers of all time. Known for his incredible athleticism, goal-scoring ability, and work ethic, Ronaldo has won five Ballon d'Or awards. He has played for top clubs like Manchester United, Real Madrid, Juventus, and Al-Nassr, breaking numerous records, including being the all-time top scorer in the UEFA Champions League and international football. Ronaldo has won multiple league titles, Champions League trophies, and led Portugal to victory in the UEFA Euro 2016 and the UEFA Nations League in 2019.</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+      <h1 class="heading">Allu Arjun</h1>
+        <img src="aa.jpeg" alt="Image 6">
+        <p class="description">Allu Arjun, born on April 8, 1983, is a popular Indian actor primarily known for his work in Telugu cinema. Renowned for his stylish looks, charismatic screen presence, and exceptional dancing skills, he has become one of the most bankable stars in South Indian cinema. Arjun made his debut with Gangotri (2003) but rose to stardom with films like Arya, Bunny, and Desamuduru. His role in Pushpa: The Rise (2021) gained him pan-Indian recognition. Allu Arjun has won several awards, including multiple Filmfare and Nandi Awards, solidifying his position as a top actor in the industry.</p>
+    </div>
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- The Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <div class="lightbox-slide">
+        <img src="amazon.jpg" alt="Image 1">
+      </div>
+      <div class="lightbox-slide">
+        <img src="virat kohli.jpg" alt="Image 2">
+      </div>
+      <div class="lightbox-slide">
+        <img src="messi.jpg" alt="Image 3">
+      <div class="lightbox-slide">
+          <img src="rohit sharma.jpg" alt="Image 4">
+      </div>
+      <div class="lightbox-slide">
+          <img src="ronaldo.jpg" alt="Image 5">
+      </div>
+      <div class="lightbox-slide">
+          <img src="aa.jpeg" alt="Image 6">
+      </div>
+      <!-- Add more slides if needed -->
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <script src="image.js"></script>
+</body>
+</html>
